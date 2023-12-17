@@ -11,11 +11,11 @@ const Todo = () => {
   };
 
   const updateTask = (taskId, updatedTask) => {
-    const updatedTasks = tasks.map((task) =>
-      task.id === taskId ? { ...task, text: updatedTask } : task
-    );
+    const updatedTasks = [
+      { id: taskId, text: updatedTask },
+      ...tasks.filter((task) => task.id !== taskId),
+    ];
     setTasks(updatedTasks);
-    // setTasks([task, ...tasks]);
   };
 
   const deleteTask = (taskId) => {
