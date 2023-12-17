@@ -15,10 +15,10 @@ const Navbar = () => {
           <Link to="/" className="text-white text-lg font-bold">TODO</Link>
         </div>
         <div className="hidden md:flex space-x-4">
-          <Link to="/" className="text-white">Home</Link>
-          <Link to="/about" className="text-white">About</Link>
+          {/* <Link to="/" className="text-white">Home</Link> */}
+          {/* <Link to="/about" className="text-white">About</Link>
           <Link to="/services" className="text-white">Services</Link>
-          <Link to="/contact" className="text-white">Contact</Link>
+          <Link to="/contact" className="text-white">Contact</Link> */}
         </div>
         <div className="md:hidden flex items-center">
           <button
