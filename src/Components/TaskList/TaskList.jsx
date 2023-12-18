@@ -22,9 +22,9 @@ const TaskList = ({ tasks, updateTask, deleteTask }) => {
   const completedTasks = tasks.filter((task) => strikethroughTasks.includes(task.id));
 
   return (
-    <div>
+    <div className="overflow-x-auto">
       <h2 className="text-xl font-bold mb-2">Active Tasks</h2>
-      <table className="table-fixed w-full my-2 border-collapse border border-gray-300">
+      <table className="w-full table-auto my-2">
         <thead>
           <tr className="bg-gray-200">
             <th className="w-1/8 p-2 border border-gray-300">Index</th>
@@ -71,7 +71,7 @@ const TaskList = ({ tasks, updateTask, deleteTask }) => {
       </table>
 
       <h2 className="text-xl font-bold mb-2">Completed Tasks</h2>
-      <table className="table-fixed w-full my-2 border-collapse border border-gray-300">
+      <table className="w-full table-auto my-2">
         <thead>
           <tr className="bg-gray-200">
             <th className="w-1/8 p-2 border border-gray-300">Index</th>

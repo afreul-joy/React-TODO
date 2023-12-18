@@ -10,8 +10,7 @@ const Todo = () => {
   const [updateTaskData, setUpdateTaskData] = useState(null);
   const [isUpdateModalOpen, setUpdateModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortOrder, setSortOrder] = useState("asc"); // Default sort order is ascending
-
+  const [sortOrder, setSortOrder] = useState("asc"); // 
   const addTask = (task) => {
     setTasks([task, ...tasks]);
     toast.success("Task updated successfully");
@@ -52,7 +51,7 @@ const Todo = () => {
   return (
     <div className="container mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-4">Add Your task</h1>
-
+<ToastContainer></ToastContainer>
       {/* Search input */}
       <div className="mb-4">
         <input
